@@ -1,0 +1,27 @@
+app:
+  name: my-springboot-app
+  namespace: my-springboot-app-dev
+  cluster: .apps.cluster-tdr4t.tdr4t.sandbox1239.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/redhat-na-ssa/my-springboot-app
+  org: redhat-na-ssa
+  name: my-springboot-app
+
+image:
+  registry: Quay
+  host: quay.io
+  organization: redhat_na_ssa
+  name: my-springboot-app
+
+secrets:
+  githubUsername: '...'
+  githubPAT: '...'
+  registryUsername: '...'
+  registryToken: '...'
+  registryEncodedDockerConfigJson: |-
+    QUJDCg==
+
+maven:
+  mirror-utl: 'https://repo1.maven.org/maven2/'
