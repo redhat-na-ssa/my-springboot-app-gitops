@@ -42,17 +42,17 @@ spec:
       workspaces:
         - name: images-url
           workspace: images-url
-    - name: patch-deployment
-      params:
-        - name: namespace
-          value: '$(params.namespace)'
-        - name: IMAGE
-          value: '{{ .Values.image.host }}/{{ .Values.image.organization }}/{{ .Values.image.name }}:$(params.destination-image-tag)'
-      taskRef:
-        kind: Task
-        name: update-deployment
-      runAfter:
-        - quay-tag-promote
+    # - name: patch-deployment
+    #   params:
+    #     - name: namespace
+    #       value: '$(params.namespace)'
+    #     - name: IMAGE
+    #       value: '{{ .Values.image.host }}/{{ .Values.image.organization }}/{{ .Values.image.name }}:$(params.destination-image-tag)'
+    #   taskRef:
+    #     kind: Task
+    #     name: update-deployment
+    #   runAfter:
+    #     - quay-tag-promote
 {{- else }}
     - name: copy-image-tag
       params:
