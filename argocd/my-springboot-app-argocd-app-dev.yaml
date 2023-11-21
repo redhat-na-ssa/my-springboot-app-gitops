@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/redhat-na-ssa/my-springboot-app-gitops
-    targetRevision: no-vault
+    targetRevision: HEAD
     path: ./helm/app
     helm:
       parameters:
