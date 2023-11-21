@@ -21,7 +21,7 @@ spec:
       - name: image.tag
         value: prod
   destination:
-    server: https://kubernetes.default.svc
+    server: https://api.cluster-ggp92.ggp92.sandbox1233.opentlc.com:6443
     namespace: my-springboot-app-prod
   syncPolicy:
     automated: 
