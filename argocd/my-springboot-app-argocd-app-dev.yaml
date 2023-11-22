@@ -20,6 +20,8 @@ spec:
         value: dev
       - name: image.tag
         value: latest
+      - name: secrets.registryEncodedDockerConfigJson
+        value: 'ewogICJhdXRocyI6IHsKICAgICJxdWF5LmlvIjogewogICAgICAiYXV0aCI6ICIuLi5jaGFuZ2UtbWUuLi4iCiAgICB9CiAgfQp9' #CHANGE-ME!!!
   destination:
     server: https://kubernetes.default.svc
     namespace: my-springboot-app-dev
