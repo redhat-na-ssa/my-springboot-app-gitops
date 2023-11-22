@@ -1,6 +1,8 @@
 # Default values for springboot-template.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
+app:
+  name: my-springboot-app
 
 namespace:
   enabled: true
