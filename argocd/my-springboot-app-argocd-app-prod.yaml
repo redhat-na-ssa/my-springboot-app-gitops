@@ -20,6 +20,8 @@ spec:
         value: prod
       - name: image.tag
         value: prod
+      - name: secrets.registryEncodedDockerConfigJson
+        value: 'ewogICJhdXRocyI6IHsKICAgICJxdWF5LmlvIjogewogICAgICAiYXV0aCI6ICIuLi5jaGFuZ2UtbWUuLi4iCiAgICB9CiAgfQp9' #CHANGE-ME!!!
   destination:
     server: https://api.cluster-ggp92.ggp92.sandbox1233.opentlc.com:6443
     namespace: my-springboot-app-prod
