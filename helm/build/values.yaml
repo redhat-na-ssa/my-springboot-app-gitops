@@ -15,13 +15,5 @@ image:
   organization: redhat_na_ssa
   name: my-springboot-app
 
-# secrets:
-#   githubUsername: '...'
-#   githubPAT: '...'
-#   registryUsername: '...'
-#   registryToken: '...'
-#   registryEncodedDockerConfigJson: |-
-#     QUJDCg==
-
 maven:
   mirrorUrl: 'https://repo1.maven.org/maven2/'
